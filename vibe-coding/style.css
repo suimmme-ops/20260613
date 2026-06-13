@@ -4,8 +4,8 @@
     --text-secondary: #a0a0a0;
     --accent-color: #8b5cf6;
     --accent-glow: rgba(139, 92, 246, 0.5);
-    --glass-bg: rgba(255, 255, 255, 0.03);
-    --glass-border: rgba(255, 255, 255, 0.05);
+    --glass-bg: rgba(255, 255, 255, 0.05);
+    --glass-border: rgba(255, 255, 255, 0.1);
     --font-main: 'Noto Sans KR', 'Inter', sans-serif;
 }
 
@@ -83,8 +83,9 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 1.5rem 5%;
-    background: rgba(5, 5, 5, 0.5);
-    backdrop-filter: blur(10px);
+    background: rgba(10, 10, 10, 0.4);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
     border-bottom: 1px solid var(--glass-border);
     position: sticky;
     top: 0;
@@ -119,10 +120,12 @@ body {
 
 /* Common Components */
 .glass-card {
-    background: var(--glass-bg);
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.02));
     border: 1px solid var(--glass-border);
     border-radius: 24px;
-    backdrop-filter: blur(16px);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
     padding: 2rem;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -326,11 +329,13 @@ section {
 
 /* How to Section */
 .glass-panel {
-    background: var(--glass-bg);
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.02));
     border: 1px solid var(--glass-border);
     border-radius: 30px;
     padding: 4rem;
-    backdrop-filter: blur(16px);
+    backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
 }
 
 .glass-panel h2 {
